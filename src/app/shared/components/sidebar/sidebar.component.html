@@ -1,0 +1,13 @@
+<h2>Countries</h2>
+<hr>
+
+<ul class="list-group">
+
+  <li *ngFor="let sideBarLink of sideBarLinks"
+    [routerLink]="sideBarLink"
+    routerLinkActive="active"
+    class="list-group-item">
+    {{ FormatSideBarLinks(sideBarLink, ['-']) | titlecase }}
+  </li>
+
+</ul>

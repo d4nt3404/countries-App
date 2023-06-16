@@ -1,0 +1,11 @@
+<!-- applying debounce
+requests when user stops types -->
+
+<input
+type="text"
+[placeholder]="placeholder"
+class="form-control"
+(keyup)="onKeyPress(txtInput.value)"
+[value]="initialValue"
+#txtInput
+>
