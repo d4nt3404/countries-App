@@ -31,7 +31,7 @@ export class CountriesService {
     this.cacheStore = JSON.parse(localStorage.getItem('cacheStore')!);
   }
 
-    //by = capital | name | region
+    //by = capital | name
   searchCountryInfo(by: string, term: string): Observable<Country[]> {
     const url = `${ this.apiUrl }${ '/' + by + '/' }${ term }`;
 
